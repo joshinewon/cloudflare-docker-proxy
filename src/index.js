@@ -16,7 +16,7 @@ const routes = {
   "cloudsmith.vialink.cc": "https://docker.cloudsmith.io",
 
   // staging
-  "docker-staging.vialink.cc":https://registry-1.docker.io,
+  "docker-staging.vialink.cc":dockerhub,
 };
 
 function routeByHosts(host) {
