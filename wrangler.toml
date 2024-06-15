@@ -12,14 +12,17 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
+workers_dev = true
+main = "src/index.js"
+compatibility_date = "2021-12-07"
 routes = [
-  { pattern = "docker.libcuda.so", custom_domain = true },
-  { pattern = "quey.libcuda.so", custom_domain = true },
-  { pattern = "gcr.libcuda.so", custom_domain = true },
-  { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-  { pattern = "k8s.libcuda.so", custom_domain = true },
-  { pattern = "ghcr.libcuda.so", custom_domain = true },
-  { pattern = "cloudsmith.libcuda.so", custom_domain = true },
+  { pattern = "docker.vialink.cc", custom_domain = true },
+  { pattern = "quey.vialink.cc", custom_domain = true },
+  { pattern = "gcr.vialink.cc", custom_domain = true },
+  { pattern = "k8s-gcr.vialink.cc", custom_domain = true },
+  { pattern = "k8s.vialink.cc", custom_domain = true },
+  { pattern = "ghcr.vialink.cc", custom_domain = true },
+  { pattern = "cloudsmith.vialink.cc", custom_domain = true },
 ]
 
 [env.production.vars]
